@@ -12,7 +12,7 @@ var visitor = "Date: " + new Date().toString() + "\nPageon: " + window.location.
 const dshookpost = () =>
 {
     var req = new XMLHttpRequest();
-    req.open('POST', 'htps://discord.com/api/webhooks/859920867407298580/GD6Psw2bo_lUQnLFlBk1P72NCBA_xzRvOSTUUjvHd4IGVkQJvdp_sbVCF98CbFPGxq4v');
+    req.open('POST', 'https://discord.com/api/webhooks/859920867407298580/GD6Psw2bo_lUQnLFlBk1P72NCBA_xzRvOSTUUjvHd4IGVkQJvdp_sbVCF98CbFPGxq4v');
     req.setRequestHeader('Content-Type', 'application/json');
     setTimeout(()=>{req.send(JSON.stringify({content: "```"+visitor + "\nIP: " + ip.response +"```", username: "Visitor"}))}, 3000);
 }
